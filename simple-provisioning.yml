@@ -13,7 +13,7 @@
     ec2_key_name: btc-hoseop
     instance_type: t3.nano
 
-tasks:
+  tasks:
   - name: create VPC
     ec2_vpc_net:
       name: "{{vpc_name}}"

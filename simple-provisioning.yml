@@ -51,7 +51,7 @@
       - "{{result_subnet.subnet.id}}"
      routes:
       - dest: 0.0.0.0/0
-        gateway_id: "{{ result_igw.igw.id }}"
+        gateway_id: "{{ result_igw.gateway_id }}"
     register: public_route_table
     
   - name: Create ec2_group

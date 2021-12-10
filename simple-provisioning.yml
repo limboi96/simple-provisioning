@@ -76,6 +76,7 @@
       wait: no
       group: public SG
       count: 1
+      region: "{{aws_region}}"
       vpc_subnet_id: "{{result_subnet.subnet.id}}"
       assign_public_ip: yes
       instance_tags:
